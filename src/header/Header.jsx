@@ -1,4 +1,5 @@
 import "./Header.css";
+import Home from "../content/home/Home";
 const Header = () => {
   return (
     <>
