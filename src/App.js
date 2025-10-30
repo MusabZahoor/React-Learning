@@ -8,18 +8,21 @@ import Men from "./men/Men";
 import Product from "./product/Product";
 import Women from "./women/Women";
 import Kids from "./kids/Kids";
+import Class29thOct from "./Class29thOct";
+
 function App() {
   return (
     <>
+      <Class29thOct />
       {/* <Header />
       <Body />
       {/* <Home />
       <About /> */}
       {/* <Footer /> */}
-    
-      <Men />
+
+      {/* <Men />
       <Women />
-      <Kids />
+      <Kids /> */}
     </>
   );
 }
