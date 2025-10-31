@@ -1,6 +1,6 @@
 import { useState } from "react";
 const Class29thOct = () => {
-  const [number, setNumber] = useState(0);
+  
   // const [isOn, setIsOn] = useState(false);
   // const [buttonValue, setButtonValue] = useState(true);
   // const [showText, setShowText] = useState(false);
@@ -13,8 +13,20 @@ const Class29thOct = () => {
     setOnSub(name);
   };
   const [likeBtn, setLikeBtn] = useState(false);
+
+  const [number, setNumber] = useState(0);
   return (
     <>
+    <h1>{number}</h1>
+      <button onClick={() => setNumber(number + 1)}>Increase Value</button>
+      <button onClick={() => setNumber(number > 0 ? number - 1 : number)}>
+        Decrease by One
+      </button>
+      <button onClick={() => setNumber(0)}>Set to zero</button>
+
+      <button onClick={() => setLikeBtn(!likeBtn)}>
+        {likeBtn ? "Unlike 💔" : "Like ❤"}
+      </button>
       <form onSubmit={subForm}>
         <input
           value={name}
@@ -53,16 +65,7 @@ const Class29thOct = () => {
 
       {subForm && <p>Your name is: {onSub}</p>}
 
-      <button onClick={() => setLikeBtn(!likeBtn)}>
-        {likeBtn ? "Unlike 💔" : "Like ❤"}
-      </button>
-
-      <h1>{number}</h1>
-      <button onClick={() => setNumber(number + 1)}>Increase Value</button>
-      <button onClick={() => setNumber(number > 0 ? number - 1 : number)}>
-        Decrease by One
-      </button>
-      <button onClick={() => setNumber(0)}>Set to zero</button>
+      
       {/* <button onClick={() => setShowText(!showText)}>
         {showText ? "Hide" : "Show"}
       </button>

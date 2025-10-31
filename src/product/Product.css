@@ -78,3 +78,15 @@
   font-family: "Times New Roman", Times, serif;
   color: #424347;
 }
+.button {
+  background-color: #007bff; /* Blue primary color */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+}
