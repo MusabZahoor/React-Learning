@@ -1,18 +1,7 @@
-import React from "react";
-import { CountProvider } from "./CountContext";
-import SetCount from "./SetCount";
-import IncreaseCount from "./IncreaseCount";
+import AppShop from "./shopAssignment/AppShop";
 
 function App() {
-  return (
-    <CountProvider>
-      <div style={{ textAlign: "center", marginTop: "40px" }}>
-        <h1>useContext Counter Example</h1>
-        <SetCount />
-        <IncreaseCount />
-      </div>
-    </CountProvider>
-  );
+  return <AppShop />;
 }
 
 export default App;
